@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ai-nids-config
+  labels:
+    app: ai-nids-platform
+data:
+  ENVIRONMENT: "production"
+  PORT: "8501"
+  STREAMLIT_SERVER_HEADLESS: "true"
+  STREAMLIT_SERVER_ENABLE_CORS: "false"
